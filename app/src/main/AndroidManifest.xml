@@ -22,7 +22,16 @@
         </activity>
         <activity android:name=".biz.cate.CateHomeActivity" />
         <activity android:name=".biz.cate.TakeOutHomeActivity" />
-        <activity android:name=".biz.cate.TakeOutDetailActivity"></activity>
+        <activity android:name=".biz.cate.TakeOutDetailActivity" />
+        <activity android:name=".biz.cate.CateListActivity" />
+        <activity android:name=".biz.cate.CateDetailActivity" />
+        <activity android:name=".biz.cate.SupermarketListActivity" />
+        <activity android:name=".biz.cate.SupermarketDetailActivity" />
+        <activity android:name=".biz.signin.SignInHomeActivity" />
+        <activity android:name=".biz.signin.UserCenterActivity" />
+        <activity android:name=".biz.signin.MySigninActivity" />
+        <activity android:name=".biz.signin.SchoolTimeSingInActivity" />
+        <activity android:name=".biz.signin.MyCourseActivity"></activity>
     </application>
 
 </manifest>

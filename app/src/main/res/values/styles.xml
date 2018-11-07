@@ -45,4 +45,66 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="h_line_1px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/menu_split</item>
+    </style>
+
+    <!-- 关于龙虎榜界面 start -->
+    <style name="txt_about_lhb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/font_main_1</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="txt_user_info_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/font_main_1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="txt_user_info_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/font_main_1</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="layout_about_lhb">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">#fff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/activity_space_15</item>
+        <item name="android:paddingRight">@dimen/activity_space_15</item>
+    </style>
+    <!-- 关于龙虎榜界面 end -->
+
+    <style name="style_layout_fragment_my">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">#fff</item>
+        <item name="android:paddingLeft">@dimen/activity_space_15</item>
+    </style>
+
+    <style name="style_txt_right_fragment_my">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/activity_space_15</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:drawableRight">@drawable/ic_home_2_right</item>
+        <item name="android:textColor">@color/font_red</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
 </resources>

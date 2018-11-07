@@ -1,6 +1,8 @@
 package com.tinytongtong.peaklee.mock;
 
+import com.tinytongtong.peaklee.biz.cate.CateListBean;
 import com.tinytongtong.peaklee.biz.home.HomeListBean;
+import com.tinytongtong.peaklee.biz.signin.SignInBean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +30,32 @@ public class MockDataUtils {
         listBeans.add(new HomeListBean("外卖", "waimai"));
         listBeans.add(new HomeListBean("美食", "meishi"));
         listBeans.add(new HomeListBean("超市", "chaoshi"));
+        return listBeans;
+    }
+
+    public static List<CateListBean> generateCateList() {
+        List<CateListBean> listBeans = new ArrayList<>();
+        listBeans.add(new CateListBean("黄焖鸡米饭", "优惠五折"));
+        listBeans.add(new CateListBean("麻辣香锅", "优惠五折"));
+        listBeans.add(new CateListBean("重庆小面", "优惠五折"));
+        return listBeans;
+    }
+
+    public static List<CateListBean> generateSupermarketList() {
+        List<CateListBean> listBeans = new ArrayList<>();
+        listBeans.add(new CateListBean("牛奶", "今日优惠", "supermarket"));
+        listBeans.add(new CateListBean("面包", "今日优惠", "supermarket"));
+        listBeans.add(new CateListBean("酸奶", "今日优惠", "supermarket"));
+        return listBeans;
+    }
+
+    public static List<SignInBean> generateSignInList() {
+        List<SignInBean> listBeans = new ArrayList<>();
+        listBeans.add(new SignInBean("上课签到", "skqd"));
+        listBeans.add(new SignInBean("打卡签到", "dkqd"));
+        listBeans.add(new SignInBean("发起签到", "fqqd"));
+        listBeans.add(new SignInBean("我的位置", "wdwz"));
+        listBeans.add(new SignInBean("个人中心", "grzx"));
         return listBeans;
     }
 }

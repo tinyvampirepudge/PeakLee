@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".biz.signin.UserCenterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!--头部-->
+        <LinearLayout
+            android:id="@+id/rl_head_my"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/ic_my_head_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_head_login"
+                app:civ_border_color="#33000000"
+                app:civ_border_width="0.5dp"/>
+
+            <TextView
+                android:id="@+id/txt_userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/login_register"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_my_signin"
+                style="@style/layout_about_lhb"
+                >
+
+                <TextView
+                    style="@style/txt_user_info_left"
+                    android:text="我的签到"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_latest_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/font_main_1"
+                        android:textSize="16dp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_latest_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_home_2_right"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/h_line_1px"
+                android:layout_marginLeft="@dimen/activity_space_15"
+                />
+
+            <RelativeLayout
+                android:id="@+id/ll_setting"
+                style="@style/layout_about_lhb">
+
+                <TextView
+                    style="@style/txt_user_info_left"
+                    android:text="设置"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_home_2_right"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/h_line_1px"
+                android:layout_marginLeft="@dimen/activity_space_15"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_msg_remind"
+                style="@style/layout_about_lhb">
+
+                <TextView
+                    style="@style/txt_user_info_left"
+                    android:text="消息提醒"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_home_2_right"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/h_line_1px"
+                android:layout_marginLeft="@dimen/activity_space_15"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_switch_account"
+                style="@style/layout_about_lhb">
+
+                <TextView
+                    style="@style/txt_user_info_left"
+                    android:text="切换账号"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_home_2_right"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/h_line_1px"
+                android:layout_marginLeft="@dimen/activity_space_15"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_exit"
+                style="@style/layout_about_lhb">
+
+                <TextView
+                    style="@style/txt_user_info_left"
+                    android:text="退出"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_home_2_right"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/h_line_1px"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

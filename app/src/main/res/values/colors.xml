@@ -27,4 +27,17 @@
 
     <!--app2.0 背景色统一使用该值-->
     <color name="app_bg">#fff</color>
+    <color name="white_bg">#fff</color>
+    <color name="menu_split">#e6e6e6</color>
+    <!--主黑字体颜色-->
+    <color name="font_main_1">#333333</color>
+    <!--主灰色字体颜色-->
+    <color name="font_main_2">#999999</color>
+    <color name="font_red">@color/stock_red</color>
+    <color name="font_green">@color/stock_green</color>
+    <color name="inner_menu_bg">#f9f9f9</color>
+    <color name="menu_split_deep">#c2c2c2</color>
+    <color name="stock_red">#f2233b</color>
+    <color name="stock_green">#15af3d</color>
+
 </resources>

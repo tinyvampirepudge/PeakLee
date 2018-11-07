@@ -1,7 +1,9 @@
-package com.tinytongtong.peaklee.biz.cate;
+package com.tinytongtong.peaklee.biz.signin;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -13,28 +15,25 @@ import com.tinytongtong.peaklee.mock.MockDataUtils;
 
 import java.util.List;
 
-public class CateHomeActivity extends BaseActivity {
-
-    private RecyclerView recyclerView;
-    private HomeAdapter adapter;
+public class SignInHomeActivity extends BaseActivity {
 
     public static void actionStart(Context context) {
-        Intent starter = new Intent(context, CateHomeActivity.class);
+        Intent starter = new Intent(context, SignInHomeActivity.class);
         context.startActivity(starter);
     }
 
     @Override
     protected int setContentLayout() {
-        return R.layout.activity_cate_home;
+        return R.layout.activity_sign_in_home;
     }
 
     @Override
     protected void buildContentView() {
-        recyclerView = findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         GridLayoutManager glm = new GridLayoutManager(this, 3);
         recyclerView.setLayoutManager(glm);
-        List<HomeListBean> listBeans = MockDataUtils.generateCateHomeList();
-        adapter = new HomeAdapter(this, listBeans);
+        List<SignInBean> listBeans = MockDataUtils.generateSignInList();
+        SignInAdapter adapter = new SignInAdapter(this, listBeans);
         recyclerView.setAdapter(adapter);
     }
 
@@ -45,6 +44,6 @@ public class CateHomeActivity extends BaseActivity {
 
     @Override
     protected String getTitleText() {
-        return "美食优惠";
+        return "易班签到";
     }
 }

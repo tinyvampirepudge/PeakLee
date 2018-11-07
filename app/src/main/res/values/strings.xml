@@ -5,4 +5,5 @@
     <string name="title_home">首页</string>
     <string name="title_service_center">服务中心</string>
     <string name="title_personal_center">个人中心</string>
+    <string name="login_register">登录/注册</string>
 </resources>

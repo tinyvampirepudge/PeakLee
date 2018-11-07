@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".biz.signin.SchoolTimeSingInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_my_courses"
+                style="@style/layout_about_lhb"
+                >
+
+                <TextView
+                    style="@style/txt_user_info_left"
+                    android:text="我的课程"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_latest_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/font_main_1"
+                        android:textSize="16dp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_latest_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_home_2_right"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/h_line_1px"
+                android:layout_marginLeft="@dimen/activity_space_15"
+                />
+
+            <RelativeLayout
+                android:id="@+id/ll_remind"
+                style="@style/style_layout_fragment_my">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="上课提醒"
+                    android:textColor="@color/font_main_1"
+                    android:textSize="16sp"/>
+
+
+                <CheckBox
+                    android:id="@+id/cb_screen_on"
+                    style="@style/style_txt_right_fragment_my"
+                    android:button="@drawable/sel_push_setting_option_switch"
+                    android:clickable="false"
+                    android:drawableRight="@null"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/h_line_1px"
+                android:layout_marginLeft="@dimen/activity_space_15"
+                />
+
+            <RelativeLayout
+                android:id="@+id/ll_setting"
+                style="@style/layout_about_lhb">
+
+                <TextView
+                    style="@style/txt_user_info_left"
+                    android:text="设置"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_home_2_right"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/h_line_1px"
+                android:layout_marginLeft="@dimen/activity_space_15"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
