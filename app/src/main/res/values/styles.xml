@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/app_bg</item>
+        <item name="android:windowAnimationStyle">@style/FadeAnimationStyle</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="FadeAnimationStyle" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/qd_translucent_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/qd_translucent_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/qd_translucent_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/qd_translucent_exit</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="title_standard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="title_bar_white" parent="title_standard">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/shape_c2_0</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="title_txt">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/c3</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

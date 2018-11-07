@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PeakLee</string>
+    <string name="string_exit_app">再按一次退出程序</string>
+    <string name="title_activity_index_main">Refresh</string>
+    <string name="title_home">首页</string>
+    <string name="title_service_center">服务中心</string>
+    <string name="title_personal_center">个人中心</string>
+</resources>

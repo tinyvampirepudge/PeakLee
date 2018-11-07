@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="c0">#000000</color>
+    <color name="c1">#FDA413</color>
+    <color name="c2">#FFFFFF</color>
+    <color name="c3">#333333</color>
+    <color name="c4">#555555</color>
+    <color name="c5">#888888</color>
+    <color name="c6">#9D9D9D</color>
+    <color name="c7">#CCCCCC</color>
+    <color name="c8">#DBDBDB</color>
+    <color name="c9">#F2F2F2</color>
+    <color name="c10">#F4F4F4</color>
+
+    <color name="c11">#FFF2DC</color>
+    <color name="c12">#FF3B30</color>
+    <color name="c13">#FE524A</color>
+    <color name="c14">#fda413</color>
+    <color name="c15">#45B7F5</color>
+    <color name="c16">#6ECC51</color>
+
+    <color name="line_color">#DBDBDB</color>
+
+    <!--app2.0 背景色统一使用该值-->
+    <color name="app_bg">#fff</color>
+</resources>
