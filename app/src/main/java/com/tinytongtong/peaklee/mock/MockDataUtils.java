@@ -58,4 +58,20 @@ public class MockDataUtils {
         listBeans.add(new SignInBean("个人中心", "grzx"));
         return listBeans;
     }
+
+    public static List<SignInBean> generateStartSignInList() {
+        List<SignInBean> listBeans = new ArrayList<>();
+        listBeans.add(new SignInBean("晨跑签到", "cpqd"));
+        listBeans.add(new SignInBean("早餐签到", "zcqd"));
+        listBeans.add(new SignInBean("晨读签到", "cdqd"));
+        return listBeans;
+    }
+
+    public static List<SignInBean> generateEnteredSignInList() {
+        List<SignInBean> listBeans = new ArrayList<>();
+        listBeans.add(new SignInBean("英语角签到", "yyjqd"));
+        listBeans.add(new SignInBean("夏令营签到", "xlyqd"));
+        listBeans.add(new SignInBean("运动签到", "ydqd"));
+        return listBeans;
+    }
 }

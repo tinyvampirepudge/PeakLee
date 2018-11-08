@@ -31,7 +31,11 @@
         <activity android:name=".biz.signin.UserCenterActivity" />
         <activity android:name=".biz.signin.MySigninActivity" />
         <activity android:name=".biz.signin.SchoolTimeSingInActivity" />
-        <activity android:name=".biz.signin.MyCourseActivity"></activity>
+        <activity android:name=".biz.signin.MyCourseActivity" />
+        <activity android:name=".biz.signin.CardSignInActivity" />
+        <activity android:name=".biz.signin.CardSignInListActivity" />
+        <activity android:name=".biz.signin.StartSignInActivity" />
+        <activity android:name=".biz.signin.MorningRunSignInActivity"></activity>
     </application>
 
 </manifest>

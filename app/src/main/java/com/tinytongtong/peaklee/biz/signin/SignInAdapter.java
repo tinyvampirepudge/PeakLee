@@ -78,16 +78,34 @@ public class SignInAdapter extends RecyclerView.Adapter<SignInAdapter.WeatherVie
                                     SchoolTimeSingInActivity.actionStart(mContext);
                                     break;
                                 case "dkqd":// 打卡签到
-                                    ToastUtils.showSingleToast("打卡签到");
+                                    CardSignInActivity.actionStart(mContext);
                                     break;
                                 case "fqqd":// 发起签到
-                                    ToastUtils.showSingleToast("发起签到");
+                                    StartSignInActivity.actionStart(mContext);
                                     break;
                                 case "wdwz":// 我的位置
                                     ToastUtils.showSingleToast("我的位置");
                                     break;
                                 case "grzx":// 个人中心
                                     UserCenterActivity.actionStart(mContext);
+                                    break;
+                                case "cpqd":// 晨跑签到
+                                    MorningRunSignInActivity.actionStart(mContext);
+                                    break;
+                                case "zcqd":// 早餐签到
+                                    ToastUtils.showSingleToast("早餐签到");
+                                    break;
+                                case "cdqd":// 晨读签到
+                                    ToastUtils.showSingleToast("晨读签到");
+                                    break;
+                                case "yyjqd":// 英语角签到
+                                    ToastUtils.showSingleToast("英语角签到");
+                                    break;
+                                case "xlyqd":// 夏令营签到
+                                    ToastUtils.showSingleToast("夏令营签到");
+                                    break;
+                                case "ydqd":// 运动签到
+                                    ToastUtils.showSingleToast("运动签到");
                                     break;
                                 default:
                                     break;

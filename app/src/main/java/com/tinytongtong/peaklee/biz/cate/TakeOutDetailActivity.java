@@ -9,6 +9,7 @@ import android.view.View;
 import com.tinytongtong.peaklee.R;
 import com.tinytongtong.peaklee.base.BaseActivity;
 import com.tinytongtong.peaklee.utils.StatusBarUtil;
+import com.tinytongtong.peaklee.utils.ToastUtils;
 
 public class TakeOutDetailActivity extends BaseActivity {
     public static void actionStart(Context context) {
@@ -27,6 +28,12 @@ public class TakeOutDetailActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        findViewById(R.id.btn_to_mt).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ToastUtils.showSingleToast("想得美");
             }
         });
     }
